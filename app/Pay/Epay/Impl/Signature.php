@@ -35,6 +35,6 @@ class Signature implements SignatureInterface
             }
             $pairs[] = $k . '=' . $v;
         }
-        return md5(implode('&', $pairs) . '&key=' . $key);
+        return md5(implode('&', $pairs) . $key);
     }
 }

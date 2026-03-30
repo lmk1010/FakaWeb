@@ -54,6 +54,6 @@ class Pay extends Base implements PayInterface
             }
             $pairs[] = $k . '=' . $v;
         }
-        return md5(implode('&', $pairs) . '&key=' . $key);
+        return md5(implode('&', $pairs) . $key);
     }
 }
