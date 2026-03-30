@@ -392,7 +392,7 @@ class Index extends User
 
         $get = new Get(Order::class);
         $get->setPaginate((int)$this->request->post("page"), (int)$this->request->post("limit"));
-        $get->setColumn('id', 'trade_no', 'sku', 'secret', 'user_id', 'password', 'amount', 'pay_id', 'commodity_id', 'create_time', 'pay_time', 'delivery_status', 'status', 'card_num', 'contact', "race");
+        $get->setColumn('id', 'trade_no', 'sku', 'user_id', 'password', 'amount', 'pay_id', 'commodity_id', 'create_time', 'pay_time', 'delivery_status', 'status', 'card_num', "race");
 
         $data = $this->query->get($get, function (Builder $builder) use ($keywords) {
 
@@ -413,13 +413,10 @@ class Index extends User
         foreach ($data['list'] as &$item) {
             if ($item['status'] != 1) {
                 unset($item['commodity']['leave_message']);
-                unset($item['secret']);
             }
 
-            if (!empty($item['password'])) {
-                $item['password'] = true;
-                unset($item['secret']);
-            }
+            $item['password'] = !empty($item['password']);
+            $item['need_contact_verify'] = $item['status'] == 1 && $item['password'] === false;
         }
 
         hook(Hook::USER_API_INDEX_QUERY_LIST, $data);
@@ -432,8 +429,16 @@ class Index extends User
      * @return array
      * @throws JSONException
      */
-    public function secret(string $tradeNo, string $password): array
+    public function secret(string $tradeNo, string $password = "", string $contact = ""): array
     {
+        $tradeNo = trim($tradeNo);
+        $password = trim($password);
+        $contact = trim($contact);
+
+        if (!preg_match('/^\d{18}$/', $tradeNo)) {
+            throw new JSONException("订单号格式错误");
+        }
+
         $order = Order::with(['commodity'])->where("trade_no", $tradeNo)->first();
 
         if (!$order) {
@@ -441,9 +446,11 @@ class Index extends User
         }
 
         if (!empty($order->password)) {
-            if ($password != $order->password) {
+            if (!hash_equals((string)$order->password, $password)) {
                 throw new JSONException("密码错误");
             }
+        } elseif (!hash_equals((string)$order->contact, $contact)) {
+            throw new JSONException("联系方式错误");
         }
 
         if ($order->status != 1) {

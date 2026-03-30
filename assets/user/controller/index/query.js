@@ -97,7 +97,7 @@
         <div class="password-form">
           <div class="input-group">
             <input type="password" class="form-control card-password-input passin-${order.trade_no}" placeholder="请输入查询密码">
-            <button type="button" class="btn btn-primary view-card-btn" data-no="${order.trade_no}">
+            <button type="button" class="btn btn-primary view-card-btn" data-no="${order.trade_no}" data-auth="password">
               <i class="fa-duotone fa-regular fa-eye me-2"></i>查看卡密
             </button>
           </div>
@@ -111,7 +111,23 @@
         </div>
       </div>`;
             } else {
-                cardContent = `<div class="card-content-no-password"><div class="card-display">${order.secret}</div></div>${order?.commodity?.leave_message ? `<div class="mt-3">${order?.commodity?.leave_message}</div>` : ""}`;
+                cardContent = `<div class="card-password-section card-content-${order.trade_no}">
+        <div class="password-form">
+          <div class="input-group">
+            <input type="text" class="form-control card-password-input passin-${order.trade_no}" placeholder="请输入下单联系方式">
+            <button type="button" class="btn btn-primary view-card-btn" data-no="${order.trade_no}" data-auth="contact">
+              <i class="fa-duotone fa-regular fa-eye me-2"></i>查看卡密
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-loading loading-${order.trade_no}" style="display: none;">
+        <div class="loading-content">
+          <i class="fa-duotone fa-regular fa-spinner-third icon-spin"></i>
+          <span>正在解密数据...</span>
+        </div>
+      </div>`;
             }
 
             cardContent = `<div class="card-section">
@@ -204,10 +220,11 @@
 
     $(document).off('click', '.view-card-btn').on('click', '.view-card-btn', function () {
         const tradeNo = $(this).data("no");
-        const pass = $(`.passin-${tradeNo}`).val().trim();
+        const auth = $(this).data("auth");
+        const inputValue = $(`.passin-${tradeNo}`).val().trim();
 
-        if (!pass) {
-            message.error("请输入密码");
+        if (!inputValue) {
+            message.error(auth === "contact" ? "请输入下单联系方式" : "请输入密码");
             return;
         }
 
@@ -218,7 +235,8 @@
             url: "/user/api/index/secret",
             data: {
                 tradeNo: tradeNo,
-                password: pass
+                password: auth === "password" ? inputValue : "",
+                contact: auth === "contact" ? inputValue : ""
             },
             loader: false,
             done: res => {

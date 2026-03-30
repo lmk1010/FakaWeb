@@ -71,11 +71,23 @@ class Order extends User
     public function state(#[Post] string $tradeNo): array
     {
         $tradeNo = trim($tradeNo);
-        $order = \App\Model\Order::query()->where("trade_no", $tradeNo)->first(['id', 'trade_no', 'amount', 'status']);
-        if (!$order) {
-            $order = UserRecharge::query()->where("trade_no", $tradeNo)->first(['id', 'trade_no', 'amount', 'status']);
+
+        if (!preg_match('/^\d{18}$/', $tradeNo)) {
+            throw new JSONException("订单号格式错误");
         }
-        //回显订单信息
-        return $this->json(200, 'success', $order->toArray());
+
+        $order = \App\Model\Order::query()->where("trade_no", $tradeNo)->first(['id', 'trade_no', 'status']);
+        if (!$order) {
+            $order = UserRecharge::query()->where("trade_no", $tradeNo)->first(['id', 'trade_no', 'status']);
+        }
+
+        if (!$order) {
+            throw new JSONException("未查询到订单");
+        }
+
+        return $this->json(200, 'success', [
+            "trade_no" => $order->trade_no,
+            "status" => (int)$order->status
+        ]);
     }
 }

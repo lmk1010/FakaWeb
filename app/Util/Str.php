@@ -58,7 +58,7 @@ class Str
      */
     public static function generateTradeNo()
     {
-        return mt_rand(100, 999) . date("ymdHis", time()) . mt_rand(100, 999);
+        return (string)random_int(100000000000000000, 999999999999999999);
     }
 
     /**
