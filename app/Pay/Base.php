@@ -74,6 +74,6 @@ abstract class Base
      */
     protected function http(): Client
     {
-        return new Client(["verify" => false]);
+        return new Client(["verify" => true]);
     }
 }

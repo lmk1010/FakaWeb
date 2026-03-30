@@ -6,6 +6,7 @@ namespace App\Controller\Admin;
 use App\Consts\Manage as ManageConst;
 use App\Controller\Base\View\Manage;
 use App\Util\Client;
+use App\Util\Cookie;
 use Kernel\Exception\ViewException;
 
 /**
@@ -30,7 +31,7 @@ class Authentication extends Manage
 
     public function logout()
     {
-        setcookie(ManageConst::SESSION, "", time() - 3600, "/");
+        Cookie::clear(ManageConst::SESSION, "/", "Lax", true);
         Client::redirect("/admin/authentication/login", "注销成功..", 1);
     }
 }

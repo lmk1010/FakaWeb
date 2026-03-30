@@ -29,6 +29,16 @@ class Aes
      */
     public static function decrypt(string $data, string $key, string $iv): mixed
     {
-        return unserialize((string)openssl_decrypt(base64_decode($data), 'aes-128-cbc', $key, 1, $iv));
+        $plain = openssl_decrypt(base64_decode($data), 'aes-128-cbc', $key, OPENSSL_RAW_DATA, $iv);
+        if ($plain === false) {
+            return null;
+        }
+
+        $result = @unserialize((string)$plain, ['allowed_classes' => false]);
+        if ($result === false && $plain !== serialize(false)) {
+            return null;
+        }
+
+        return $result;
     }
 }

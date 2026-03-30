@@ -52,6 +52,16 @@ class Binary
      */
     public function unpack(string $data, ?string $key = null): mixed
     {
-        return unserialize($this->decrypt($data, $key ?? $this->generateKey()) ?: "");
+        $plain = $this->decrypt($data, $key ?? $this->generateKey());
+        if ($plain === false) {
+            return null;
+        }
+
+        $result = @unserialize($plain, ['allowed_classes' => false]);
+        if ($result === false && $plain !== serialize(false)) {
+            return null;
+        }
+
+        return $result;
     }
 }

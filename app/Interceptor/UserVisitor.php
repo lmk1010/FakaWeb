@@ -5,6 +5,7 @@ namespace App\Interceptor;
 
 
 use App\Consts\User;
+use App\Util\Cookie;
 use App\Util\Context;
 use App\Util\JWT;
 use Firebase\JWT\Key;
@@ -20,7 +21,7 @@ class UserVisitor implements InterceptorInterface
     public function handle(int $type): void
     {
         if (isset($_GET['from']) && \App\Model\User::query()->where("id", $_GET['from'])->exists()) {
-            setcookie("promotion_from", $_GET['from'], time() + 10 * 365 * 24 * 60 * 60, "/");
+            Cookie::set("promotion_from", (string)(int)$_GET['from'], time() + 10 * 365 * 24 * 60 * 60, "/", "Lax", true);
         }
 
         if (!array_key_exists(User::SESSION, $_COOKIE)) {

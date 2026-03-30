@@ -8,6 +8,7 @@ use App\Consts\Manage as ManageConst;
 use App\Model\Manage;
 use App\Model\ManageLog;
 use App\Util\Client;
+use App\Util\Cookie;
 use App\Util\Date;
 use App\Util\Str;
 use Firebase\JWT\JWT;
@@ -75,7 +76,7 @@ class ManageSSO implements \App\Service\ManageSSO
             head: ["mid" => $manage->id]
         ));
 
-        setcookie(ManageConst::SESSION, $jwt, time() + $expire, "/");
+        Cookie::set(ManageConst::SESSION, $jwt, time() + $expire, "/", "Lax", true);
 
         return ["username" => $manage->email, "avatar" => $manage->avatar, "token" => $jwt];
     }

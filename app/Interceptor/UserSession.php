@@ -6,6 +6,7 @@ namespace App\Interceptor;
 
 use App\Consts\User;
 use App\Util\Client;
+use App\Util\Cookie;
 use App\Util\Context;
 use App\Util\JWT;
 use Firebase\JWT\Key;
@@ -26,11 +27,8 @@ class UserSession implements InterceptorInterface
      */
     #[NoReturn] public function handle(int $type): void
     {
-        if ($type == Interceptor::TYPE_API) {
-            list($p1, $p2) = [(array)parse_url((string)$_SERVER['HTTP_REFERER']), parse_url(Client::getUrl())];
-            if ($p1['host'] != $p2['host']) {
-                throw new JSONException("当前页面会话失效，请刷新网页..");
-            }
+        if ($type == Interceptor::TYPE_API && !$this->isSameOriginRequest()) {
+            throw new JSONException("当前页面会话失效，请刷新网页..");
         }
 
         if (!array_key_exists(User::SESSION, $_COOKIE)) {
@@ -75,12 +73,28 @@ class UserSession implements InterceptorInterface
      */
     #[NoReturn] private function kick(int $type): void
     {
-        setcookie(User::SESSION, "", time() - 3600, "/");
+        Cookie::clear(User::SESSION, "/", "Lax", true);
         if ($type == Interceptor::TYPE_VIEW) {
             Client::redirect("/user/authentication/login?goto=" . urlencode($_SERVER['REQUEST_URI']), "登录会话过期，请重新登录..");
         } else {
             header('content-type:application/json;charset=utf-8');
             exit(json_encode(["code" => 0, "msg" => "登录会话过期，请重新登录.."], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
         }
+    }
+
+    private function isSameOriginRequest(): bool
+    {
+        $host = (string)(parse_url(Client::getUrl(), PHP_URL_HOST) ?? "");
+        if ($host === "") {
+            return false;
+        }
+
+        $origin = (string)($_SERVER['HTTP_ORIGIN'] ?? $_SERVER['HTTP_REFERER'] ?? "");
+        if ($origin === "") {
+            return true;
+        }
+
+        $sourceHost = (string)(parse_url($origin, PHP_URL_HOST) ?? "");
+        return $sourceHost !== "" && strcasecmp($sourceHost, $host) === 0;
     }
 }

@@ -6,6 +6,7 @@ namespace App\Controller\User;
 use App\Controller\Base\View\User;
 use App\Model\Config;
 use App\Util\Client;
+use App\Util\Cookie;
 use Kernel\Exception\ViewException;
 
 /**
@@ -79,7 +80,7 @@ class Authentication extends User
      */
     public function logout(): void
     {
-        setcookie(\App\Consts\User::SESSION, "", time() - 3600, "/");
+        Cookie::clear(\App\Consts\User::SESSION, "/", "Lax", true);
         Client::redirect("/user/authentication/login", "注销成功", 1);
     }
 }

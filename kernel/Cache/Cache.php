@@ -74,7 +74,7 @@ class Cache
     {
         return File::read($this->cacheDir . md5($name), function (string $contents) {
             return match ($this->resolve) {
-                self::OPTIONS_SERIALIZE => unserialize(base64_decode($contents)),
+                self::OPTIONS_SERIALIZE => @unserialize((string)base64_decode($contents), ['allowed_classes' => false]),
                 self::OPTIONS_JSON => json_decode(base64_decode($contents, true)),
                 default => base64_decode($contents),
             };

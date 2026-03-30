@@ -8,6 +8,7 @@ use App\Consts\Hook;
 use App\Model\Config;
 use App\Model\User;
 use App\Util\Client;
+use App\Util\Cookie;
 use App\Util\Date;
 use Firebase\JWT\JWT;
 use Kernel\Exception\RuntimeException;
@@ -42,7 +43,7 @@ class UserSSO implements \App\Service\UserSSO
             head: ["uid" => $user->id]
         ));
 
-        setcookie(\App\Consts\User::SESSION, $jwt, time() + $sessionExpire, "/");
+        Cookie::set(\App\Consts\User::SESSION, $jwt, time() + $sessionExpire, "/", "Lax", true);
         hook(Hook::USER_API_AUTH_LOGIN_AFTER, $user);
     }
 }

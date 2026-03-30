@@ -53,11 +53,20 @@ try {
     }
 
     $s = explode("/", trim((string)$routePath, '/'));
+    $appConfig = (array)config('app');
+    $pluginRuntimeEnabled = (string)($appConfig['plugin_runtime_enabled'] ?? '0') === '1';
     Context::set(Base::ROUTE, "/" . implode("/", $s));
     Context::set(Base::LOCK, (string)file_get_contents(BASE_PATH . "/kernel/Install/Lock"));
     Context::set(Base::IS_INSTALL, file_exists(BASE_PATH . '/kernel/Install/Lock'));
     Context::set(Base::OPCACHE, extension_loaded("Zend OPcache") || extension_loaded("opcache"));
-    Context::set(Base::STORE_STATUS, file_exists(BASE_PATH . "/kernel/Plugin.php"));
+    Context::set(Base::STORE_STATUS, file_exists(BASE_PATH . "/kernel/Plugin.php") && $pluginRuntimeEnabled);
+    header("X-Content-Type-Options: nosniff");
+    header("X-Frame-Options: SAMEORIGIN");
+    header("Referrer-Policy: strict-origin-when-cross-origin");
+    header("Permissions-Policy: geolocation=(), microphone=(), camera=()");
+    if (\App\Util\Cookie::isSecureRequest()) {
+        header("Strict-Transport-Security: max-age=31536000; includeSubDomains");
+    }
 
     $count = count($s);
     $controller = "App\\Controller";

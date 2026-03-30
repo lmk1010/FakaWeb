@@ -32,10 +32,10 @@ class Plugin
             $data = (array)File::codeLoad($db, $cli);
         }
 
-        $data[$key] = serialize([
+        $data[$key] = json_encode([
             'data' => $value,
             'expire' => $expire == 0 ? 0 : time() + $expire
-        ]);
+        ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
         setConfig($data, $db);
     }
 
@@ -61,13 +61,18 @@ class Plugin
             return null;
         }
 
-        $unserialize = unserialize($data[$key]);
-        if ($unserialize['expire'] != 0 && $unserialize['expire'] < time()) {
+        $cache = self::decodeCachePayload((string)$data[$key]);
+        if (!$cache) {
+            self::delCache($pluginName, $db, $key, $cli);
+            return null;
+        }
+
+        if ($cache['expire'] != 0 && $cache['expire'] < time()) {
             self::delCache($pluginName, $db, $key);
             return null;
         }
 
-        return $unserialize['data'];
+        return $cache['data'];
     }
 
     /**
@@ -86,12 +91,17 @@ class Plugin
         $data = (array)File::codeLoad($path, $cli);
         $success = [];
         foreach ($data as $key => $val) {
-            $unserialize = unserialize($val);
-            if ($unserialize['expire'] != 0 && (int)$unserialize['expire'] < time()) {
+            $cache = self::decodeCachePayload((string)$val);
+            if (!$cache) {
+                self::delCache($pluginName, $db, $key, $cli);
+                continue;
+            }
+
+            if ($cache['expire'] != 0 && (int)$cache['expire'] < time()) {
                 self::delCache($pluginName, $db, $key);
                 continue;
             }
-            $success[$key] = $unserialize['data'];
+            $success[$key] = $cache['data'];
         }
         return $success;
     }
@@ -194,5 +204,20 @@ class Plugin
     {
         $path = BASE_PATH . '/app/Plugin/' . $pluginName . '/runtime.log';
         file_put_contents($path, "[" . Date::current() . "]:" . $message . PHP_EOL, FILE_APPEND);
+    }
+
+    private static function decodeCachePayload(string $payload): ?array
+    {
+        $json = json_decode($payload, true);
+        if (is_array($json) && array_key_exists("data", $json) && array_key_exists("expire", $json)) {
+            return $json;
+        }
+
+        $legacy = @unserialize($payload, ['allowed_classes' => false]);
+        if (is_array($legacy) && array_key_exists("data", $legacy) && array_key_exists("expire", $legacy)) {
+            return $legacy;
+        }
+
+        return null;
     }
 }
