@@ -1,0 +1,306 @@
+[2026-03-29 10:15:26]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/dashboard/index
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http://127.0.0.1:8080/admin/authentication/login","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:26]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/app/ad
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:27]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/dashboard/data
+POST数据：{"type":"0"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"6","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:27]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/dashboard/weekStatistics
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:27]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/app/latest
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:27]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/app/getUpdates
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:27]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/app/versions
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:52]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/user/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:52]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/user/data
+POST数据：{"offset":"0","limit":"13","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:53]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/recharge/order?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:53]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/rechargeOrder/data
+POST数据：{"offset":"0","limit":"13","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/recharge/order","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:53]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/dict/get
+POST数据：{"dict":"pay->id!=1,id,name","keywords":""}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"41","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/recharge/order","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:53]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/user/bill?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/recharge/order","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:53]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/bill/data
+POST数据：{"offset":"0","limit":"19","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/bill","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:54]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/user/group?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/bill","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:54]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/group/data
+POST数据：{"offset":"0","limit":"17","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/group","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:54]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/user/businessLevel?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/group","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:54]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/businessLevel/data
+POST数据：{"offset":"0","limit":"17","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/businessLevel","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:55]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/cash/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/businessLevel","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:55]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/cash/data
+POST数据：{"offset":"0","limit":"15","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/cash/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:55]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/user/businessLevel?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/cash/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:55]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/businessLevel/data
+POST数据：{"offset":"0","limit":"17","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/businessLevel","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:56]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/category/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/user/businessLevel","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:56]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/category/data
+POST数据：{"offset":"0","limit":"15","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/category/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:56]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/commodity/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/category/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:57]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/commodity/data
+POST数据：{"offset":"0","limit":"13","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/commodity/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:57]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/dict/get
+POST数据：{"dict":"category,id,name","keywords":""}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"35","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/commodity/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:15:57]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/dict/get
+POST数据：{"dict":"shared,id,name","keywords":""}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"33","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/commodity/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:16:00]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/dashboard/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/commodity/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:16:00]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/app/ad
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:16:00]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/dashboard/data
+POST数据：{"type":"0"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"6","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:16:00]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/dashboard/weekStatistics
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:16:05]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/manage/set?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/dashboard/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf"}
+----------------------------------------
+[2026-03-29 10:16:08]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/config/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/manage/set","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=343.5"}
+----------------------------------------
+[2026-03-29 10:16:13]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/pay/plugin?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/config/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:14]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/pay/getPlugins
+POST数据：{"page":"NaN"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"8","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/pay/plugin","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:15]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/store/home?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/pay/plugin","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:15]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/app/init
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"0","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/store/home","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:15]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/app/captcha?type=captcha_reg
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"0","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/store/home","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:15]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/app/plugins
+POST数据：{"offset":"0","limit":"18","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/store/home","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:21]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/app/login
+POST数据：{"username":"","password":""}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"19","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/store/home","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:26]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/pay/plugin
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http://127.0.0.1:8080/admin/authentication/login","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:26]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/app/latest
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/pay/plugin","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412"}
+----------------------------------------
+[2026-03-29 10:16:26]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/api/app/getUpdates
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"*/*","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/pay/plugin","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412"}
+----------------------------------------
+[2026-03-29 10:16:26]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/pay/getPlugins
+POST数据：{"page":"NaN"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"8","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/pay/plugin","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412"}
+----------------------------------------
+[2026-03-29 10:16:27]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/manage/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/pay/plugin","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:28]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/manage/data
+POST数据：{"offset":"0","limit":"17","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/manage/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:28]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/plugin/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/manage/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:28]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/plugin/getPlugins
+POST数据：{"page":"NaN"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"8","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/plugin/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:31]:
+IP地址：127.0.0.1
+请求地址：【GET】 -> http://127.0.0.1:8080/admin/log/index?_pjax=%23pjax-container
+POST数据：[]
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","X-PJAX-Container":"#pjax-container","X-PJAX":"true","sec-ch-ua-platform":"\"macOS\"","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","sec-ch-ua-mobile":"?0","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"text/html, */*; q=0.01","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/plugin/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
+[2026-03-29 10:16:31]:
+IP地址：127.0.0.1
+请求地址：【POST】 -> http://127.0.0.1:8080/admin/api/log/data
+POST数据：{"offset":"0","limit":"19","page":"1"}
+Headers：{"Host":"127.0.0.1:8080","Connection":"keep-alive","Content-Length":"24","sec-ch-ua-platform":"\"macOS\"","X-Requested-With":"XMLHttpRequest","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36","Accept":"application/json, text/javascript, */*; q=0.01","sec-ch-ua":"\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"","Content-Type":"application/x-www-form-urlencoded","sec-ch-ua-mobile":"?0","Origin":"http://127.0.0.1:8080","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"http://127.0.0.1:8080/admin/log/index","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"zh-CN,zh;q=0.9","Cookie":"ACG-SHOP=9rb7v77bcs5c31so66ogd636gf; kt_aside_menu_wrapperst=412.5"}
+----------------------------------------
