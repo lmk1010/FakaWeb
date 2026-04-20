@@ -1,8 +1,8 @@
 :root {
-    --ay-accent-start: #ff7dc6; /* 霓虹起色 */
-    --ay-accent-end: #7aa8ff; /* 霓虹终色 */
+    --ay-accent-start: #8b5cf6; /* 霓虹起色 */
+    --ay-accent-end: #67e8f9; /* 霓虹终色 */
     --ay-text: #f3f6ff; /* 主文字 */
-    --ay-sub: #b9c3e6; /* 次文字 */
+    --ay-sub: #cbd5e1; /* 次文字 */
     --ay-card: rgba(12, 14, 28, .55); /* 卡片深玻璃 */
     --ay-stroke: rgba(255, 255, 255, .18); /* 细边 */
     --ay-input: rgba(255, 255, 255, .06); /* 输入框底 */
@@ -33,7 +33,7 @@ body.ay-bg {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    background: radial-gradient(60% 50% at 50% 30%, rgba(0, 0, 0, .25), rgba(0, 0, 0, .55) 70%);
+    background: radial-gradient(60% 50% at 50% 30%, rgba(76, 29, 149, .16), rgba(2, 6, 23, .7) 72%);
 }
 
 /* 轻量樱花飘落 */
@@ -48,7 +48,7 @@ body.ay-bg {
     position: absolute;
     width: 12px;
     height: 10px;
-    background: linear-gradient(135deg, #ffd1e6, #ff9aca);
+    background: linear-gradient(135deg, #ddd6fe, #67e8f9);
     border-radius: 80% 80% 80% 20% / 80% 80% 20% 80%;
     opacity: .5;
     filter: blur(.2px);
@@ -101,7 +101,7 @@ body.ay-bg {
 
 .ay-badge em {
     font-style: normal;
-    color: #ffe5f3
+    color: #e9d5ff
 }
 
 /* 卡片 */
@@ -151,8 +151,8 @@ body.ay-bg {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: url("/favicon.ico") no-repeat center/contain;
-    box-shadow: 0 8px 26px rgba(255, 154, 202, .25);
+    background: url("/assets/user/images/charitydoing-icon.svg") no-repeat center/contain;
+    box-shadow: 0 10px 28px rgba(139, 92, 246, .28);
 }
 
 .ay-title {
@@ -209,7 +209,7 @@ body.ay-bg {
 
 .ay-input:focus {
     border-color: rgba(255, 255, 255, .38);
-    box-shadow: 0 0 0 3px rgba(255, 125, 198, .18)
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, .18)
 }
 
 .ay-input:focus + .ay-label, .ay-input:not(:placeholder-shown) + .ay-label {
@@ -328,7 +328,7 @@ body.ay-bg {
     transition: transform .12s ease, box-shadow .2s ease;
 }
 
-.ay-btn:hover { transform: translateY(-1px); box-shadow: 0 16px 36px rgba(122,168,255,.45), inset 0 1px 0 rgba(255,255,255,.8); }
+.ay-btn:hover { transform: translateY(-1px); box-shadow: 0 16px 36px rgba(139, 92, 246, .34), inset 0 1px 0 rgba(255,255,255,.8); }
 .ay-btn:active { transform: translateY(0); }
 .ay-btn::after{ content:""; position:absolute; top:-20%; bottom:-20%; left:-40%; right:-40%; pointer-events:none;
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.35) 50%, rgba(255,255,255,0) 100%);
