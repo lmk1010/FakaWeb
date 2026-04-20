@@ -5,6 +5,7 @@ namespace App\Model;
 
 
 use App\Util\Context;
+use App\Util\Brand;
 use Illuminate\Database\Eloquent\Model;
 use Kernel\Exception\RuntimeException;
 use Kernel\Util\Binary;
@@ -68,8 +69,14 @@ class Config extends Model
         }) ?: [];
 
         if (isset($configs[$key])) {
-            Context::set($cacheKey, $configs[$key]);
-            return (string)$configs[$key];
+            $value = (string)$configs[$key];
+            if ($key === 'shop_name') {
+                $value = Brand::SHOP_NAME;
+            } elseif ($key === 'title') {
+                $value = Brand::getTitle($value);
+            }
+            Context::set($cacheKey, $value);
+            return $value;
         }
         $cfg = Config::query()->where("key", $key)->first();
         if (!$cfg) {
@@ -82,9 +89,15 @@ class Config extends Model
             return Binary::inst()->pack($configs);
         });
         //存储
-        Context::set($cacheKey, $cfg->value);
+        $value = (string)$cfg->value;
+        if ($key === 'shop_name') {
+            $value = Brand::SHOP_NAME;
+        } elseif ($key === 'title') {
+            $value = Brand::getTitle($value);
+        }
+        Context::set($cacheKey, $value);
 
-        return (string)$cfg->value;
+        return $value;
     }
 
     /**
@@ -97,6 +110,7 @@ class Config extends Model
         foreach ($cfg as $item) {
             $list[$item->key] = $item->value;
         }
+        Brand::apply($list);
         return $list;
     }
 

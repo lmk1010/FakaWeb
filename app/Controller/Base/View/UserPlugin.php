@@ -6,6 +6,7 @@ namespace App\Controller\Base\View;
 
 use App\Model\Business;
 use App\Model\Config;
+use App\Util\Brand;
 use App\Util\Client;
 use App\Util\Theme;
 use Kernel\Exception\ViewException;
@@ -43,10 +44,11 @@ abstract class UserPlugin extends \App\Controller\Base\User
             $business = Business::query()->where("subdomain", $domain)->first() ?? Business::query()->where("topdomain", $domain)->first();
             if ($business) {
                 $data['config']['shop_name'] = $business->shop_name;
-                $data['config']['title'] = $business->title;
+                $data['config']['title'] = Brand::getTitle($business->title);
                 $data['config']['notice'] = $business->notice;
                 $data['config']['service_url'] = $business->service_url != "" ? $business->service_url : "https://wpa.qq.com/msgrd?v=1&uin={$business->service_qq}";
             }
+            Brand::apply($data['config']);
             $user = $this->getUser();
             if ($user) {
                 $data['user'] = $user;

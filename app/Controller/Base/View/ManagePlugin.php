@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Controller\Base\View;
 
 use App\Model\Config;
+use App\Util\Brand;
 use App\Util\Client;
 use Kernel\Exception\ViewException;
 use Kernel\Util\View;
@@ -32,6 +33,7 @@ abstract class ManagePlugin extends \App\Controller\Base\Manage
             foreach ($cfg as $k => $v) {
                 $data["config"][$k] = $v;
             }
+            Brand::apply($data['config']);
 
             if (Client::isMobile() && $data['config']['background_mobile_url']) {
                 $data['config']['background_url'] = $data['config']['background_mobile_url'];

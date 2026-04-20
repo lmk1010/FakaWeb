@@ -200,8 +200,8 @@ CREATE TABLE `__PREFIX__config`  (
 ) ENGINE = MyISAM AUTO_INCREMENT = 45 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 
-INSERT INTO `__PREFIX__config` VALUES (1, 'shop_name', '异次元店铺');
-INSERT INTO `__PREFIX__config` VALUES (2, 'title', '异次元店铺 - 最适合你的个人店铺系统！');
+INSERT INTO `__PREFIX__config` VALUES (1, 'shop_name', 'CharityDoing');
+INSERT INTO `__PREFIX__config` VALUES (2, 'title', 'CharityDoing - 最适合你的个人店铺系统！');
 INSERT INTO `__PREFIX__config` VALUES (3, 'description', '');
 INSERT INTO `__PREFIX__config` VALUES (4, 'keywords', '');
 INSERT INTO `__PREFIX__config` VALUES (14, 'user_theme', 'Cartoon');
