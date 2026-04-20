@@ -1,5 +1,24 @@
 #{include file="./Header.html"}
 <main class="container py-4">
+  <section class="brand-hero panel">
+    <div class="brand-hero-inner">
+      <div class="brand-hero-copy">
+        <span class="brand-pill"><i class="fa-duotone fa-regular fa-sparkles me-2"></i>CharityDoing Digital Store</span>
+        <h1 class="brand-hero-title">欢迎来到 #{$config.shop_name}</h1>
+        <p class="brand-hero-sub">#{if $config.description}#{$config.description}#{else}更清爽的数字商品下单体验，支持自动发货、订单追踪与快捷售后。#{/if}</p>
+        <div class="brand-hero-actions">
+          <a class="brand-action primary" href="#store-panel">开始选购</a>
+          <a class="brand-action secondary" href="/user/index/query">查询订单</a>
+        </div>
+      </div>
+      <div class="brand-hero-visual">
+        <div class="brand-hero-logo-wrap">
+          <img src="/assets/user/images/charitydoing-icon.svg" alt="CharityDoing" class="brand-hero-logo">
+        </div>
+        <div class="brand-hero-glow"></div>
+      </div>
+    </div>
+  </section>
   <!-- 公告面板 -->
   <div class="panel">
     <div class="panel-header">
@@ -12,7 +31,7 @@
   </div>
 
   <!-- 购买面板 -->
-  <div class="panel">
+  <div class="panel" id="store-panel">
     <div class="panel-header">
       <span class="icon"><i class="fa-duotone fa-regular fa-cart-shopping"></i></span>
       <h6 class="panel-title">购买</h6>

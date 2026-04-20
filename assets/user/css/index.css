@@ -1,14 +1,14 @@
 /* 二次元风格（无毛玻璃、无动画、注重可读与性能） */
 
 :root {
-    --acg-bg-overlay: rgba(10, 12, 28, 0.45);
-    --acg-primary: #7a8cff;
-    --acg-secondary: #b88cff;
-    --acg-danger: #ff6b88;
-    --acg-text-strong: #111319;
-    --acg-text-muted: #6b7280;
-    --acg-card-bg: rgba(255, 255, 255);
-    --acg-border: #e5e7eb;
+    --acg-bg-overlay: rgba(36, 11, 68, 0.52);
+    --acg-primary: #8b5cf6;
+    --acg-secondary: #22d3ee;
+    --acg-danger: #fb7185;
+    --acg-text-strong: #111827;
+    --acg-text-muted: #64748b;
+    --acg-card-bg: rgba(255, 255, 255, 0.88);
+    --acg-border: #e9d5ff;
 }
 
 html {
@@ -21,7 +21,7 @@ a {
 
 /* 背景直接铺图 + 颜色叠加（不使用 fixed，避免闪烁） */
 body {
-    background-image: linear-gradient(180deg, var(--acg-bg-overlay), rgba(10, 12, 28, 0.6)), url('/assets/admin/images/login/bg.jpg');
+    background-image: linear-gradient(135deg, var(--acg-bg-overlay), rgba(49, 46, 129, 0.42)), url('/assets/admin/images/login/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -48,7 +48,7 @@ body {
 }
 
 .navbar-acg .nav-link.active {
-    color: #479afb;
+    color: var(--acg-primary);
 }
 
 .navbar-acg .nav-link.active {
@@ -92,6 +92,146 @@ body {
     width: 64px;
     background: linear-gradient(90deg, var(--acg-primary), var(--acg-secondary));
     border-radius: 4px;
+}
+
+.brand-hero {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.7));
+}
+
+.brand-hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px;
+}
+
+.brand-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: var(--acg-primary);
+    background: rgba(139, 92, 246, 0.12);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.brand-hero-title {
+    margin: 16px 0 10px;
+    color: #0f172a;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.brand-hero-sub {
+    max-width: 640px;
+    margin: 0;
+    color: var(--acg-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.brand-hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.brand-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 132px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+
+.brand-action.primary {
+    color: #fff;
+    background: linear-gradient(135deg, var(--acg-primary), var(--acg-secondary));
+    box-shadow: 0 12px 28px rgba(139, 92, 246, 0.24);
+}
+
+.brand-action.secondary {
+    color: #334155;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(148, 163, 184, 0.24);
+}
+
+.brand-action:hover {
+    transform: translateY(-1px);
+}
+
+.brand-hero-visual {
+    position: relative;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-hero-logo-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 168px;
+    border-radius: 36px;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.16), rgba(34, 211, 238, 0.18));
+    box-shadow: 0 18px 48px rgba(76, 29, 149, 0.18);
+}
+
+.brand-hero-logo {
+    width: 96px;
+    height: 96px;
+}
+
+.brand-hero-glow {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.3), rgba(139, 92, 246, 0.06) 70%);
+    filter: blur(10px);
+}
+
+@media (max-width: 991.98px) {
+    .brand-hero-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-hero-visual {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .brand-hero-inner {
+        padding: 22px;
+    }
+
+    .brand-hero-logo-wrap {
+        width: 132px;
+        height: 132px;
+        border-radius: 28px;
+    }
+
+    .brand-hero-logo {
+        width: 76px;
+        height: 76px;
+    }
 }
 
 /* 分类 Chip */
@@ -431,12 +571,12 @@ body {
 
 /* 通用 panel 样式（公告/购买区） */
 .panel {
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.45);
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.62);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.05);
+    box-shadow: 0px 10px 30px 0px rgba(76, 29, 149, 0.08);
 }
 
 .panel + .panel {
@@ -448,7 +588,7 @@ body {
     align-items: center;
     gap: 5px;
     margin-bottom: 12px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(139, 92, 246, 0.08) 0px 8px 24px;
     padding: 16px;
 
 }
