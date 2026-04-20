@@ -27,7 +27,7 @@ return [
         'title' => '站点名称',
         'name' => 'sitename',
         'type' => 'input',
-        'placeholder' => 'jiminaishop'
+        'placeholder' => 'CharityDoing'
     ],
     [
         'title' => '订单标题',

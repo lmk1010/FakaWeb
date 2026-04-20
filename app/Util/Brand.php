@@ -24,6 +24,6 @@ class Brand
 
     public static function replaceLegacyBrand(string $value): string
     {
-        return str_replace(['异次元店铺', '异次元商城', '异次元', 'Jiminaishop'], self::SHOP_NAME, $value);
+        return str_ireplace(['异次元店铺', '异次元商城', '异次元', 'jiminaishop'], self::SHOP_NAME, $value);
     }
 }

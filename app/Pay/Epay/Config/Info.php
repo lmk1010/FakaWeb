@@ -5,7 +5,7 @@ return [
     'name' => '易支付',
     'description' => '兼容易支付接口（支付宝/微信/QQ钱包）',
     'version' => '1.0.0',
-    'author' => 'jiminaishop',
+    'author' => 'CharityDoing',
     'options' => [
         'alipay' => '支付宝',
         'wxpay' => '微信支付',
