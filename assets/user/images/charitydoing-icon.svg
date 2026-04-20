@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18181B"/>
+      <stop offset="1" stop-color="#4C1D95"/>
+    </linearGradient>
+    <linearGradient id="cd" x1="14" y1="18" x2="37" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5F3FF"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="31" y1="18" x2="53" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)"/>
+  <path d="M28 18C20.3 18 14 24.3 14 32C14 39.7 20.3 46 28 46C31.1 46 34 45 36.3 43.2L32.5 38.8C31.2 39.8 29.7 40.3 28 40.3C23.4 40.3 19.7 36.6 19.7 32C19.7 27.4 23.4 23.7 28 23.7C29.7 23.7 31.2 24.2 32.5 25.2L36.3 20.8C34 19 31.1 18 28 18Z" fill="url(#cd)"/>
+  <path d="M31 18H40.5C47.4 18 53 23.6 53 30.5V33.5C53 40.4 47.4 46 40.5 46H31V18Z" fill="url(#accent)"/>
+  <path d="M37 24H40.5C43.8 24 46.5 26.7 46.5 30V34C46.5 37.3 43.8 40 40.5 40H37V24Z" fill="#18181B" fill-opacity="0.32"/>
+</svg>

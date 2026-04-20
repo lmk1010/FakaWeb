@@ -61,7 +61,7 @@ abstract class User extends \App\Controller\Base\User
 
             $data['title'] = $title;
             $data['app']['version'] = \config("app")['version'];
-            $data['favicon'] = "/favicon.ico";
+            $data['favicon'] = Brand::ICON_PATH;
 
             $cfg = Config::list();
 

@@ -113,7 +113,7 @@ class Authentication extends User
         $user->app_key = strtoupper(Str::generateRandStr(16));
         $user->create_time = Date::current();
         $user->status = 1;
-        $user->avatar = "/favicon.ico";
+        $user->avatar = Brand::ICON_PATH;
 
         //分站上级
         if ($business = \App\Model\Business::get()) {

@@ -104,7 +104,7 @@ class Shop implements \App\Service\Shop
             }
 
             if (!$item->icon) {
-                $category[$index]['icon'] = '/favicon.ico';
+                $category[$index]['icon'] = Brand::ICON_PATH;
             }
         }
 
@@ -240,7 +240,7 @@ class Shop implements \App\Service\Shop
         }
 
         if (!$array['cover']) {
-            $array['cover'] = "/favicon.ico";
+            $array['cover'] = Brand::ICON_PATH;
         }
 
         $array['share_url'] = Client::getUrl() . "/item/{$array['id']}";

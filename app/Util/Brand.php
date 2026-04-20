@@ -6,6 +6,7 @@ namespace App\Util;
 class Brand
 {
     public const SHOP_NAME = 'CharityDoing';
+    public const ICON_PATH = '/assets/user/images/charitydoing-icon.svg';
 
     public static function getTitle(?string $title): string
     {
