@@ -46,6 +46,14 @@ services:
       DB_USERNAME: ${MYSQL_USER:-acg}
       DB_PASSWORD: ${MYSQL_PASSWORD:-acg123456}
       DB_PREFIX: ${DB_PREFIX:-acg_}
+    networks:
+      - default
+      - charity-network
 
 volumes:
   db_data:
+
+networks:
+  charity-network:
+    external: true
+    name: charity-network
