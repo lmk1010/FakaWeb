@@ -222,6 +222,15 @@ class Shop implements \App\Service\Shop
 
         $array = $commodity->toArray();
 
+        $displaySoldOffsetMap = [
+            11 => 859, // GPT Plus: 2 + 859 = 861
+            19 => 32,  // GPT Pro: 0 + 32 = 32
+            27 => 32,  // GPT Pro: 0 + 32 = 32
+        ];
+        if (isset($displaySoldOffsetMap[(int)$array['id']])) {
+            $array['order_sold'] = (int)$array['order_sold'] + $displaySoldOffsetMap[(int)$array['id']];
+        }
+
         if ($array["owner"]) {
             $business = Business::query()->where("user_id", $array["owner"]['id'])->first();
             if ($business) {

@@ -156,6 +156,13 @@ class Index extends User
             $cates[] = (string)$cate['id'];
         }
 
+        // 展示销量 = 实际销量 + 偏移量（用于设置起始展示值，同时保持后续递增）
+        $displaySoldOffsetMap = [
+            11 => 859, // GPT Plus: 2 + 859 = 861
+            19 => 32,  // GPT Pro: 0 + 32 = 32
+            27 => 32,  // GPT Pro: 0 + 32 = 32
+        ];
+
         //最终的商品数据遍历
         foreach ($data as $key => $val) {
             $parseGroupConfig = Commodity::parseGroupConfig($val['level_price'], $userGroup);
@@ -202,6 +209,11 @@ class Index extends User
             $data[$key]['stock_state'] = $this->shop->getStockState($data[$key]['stock']);
             if ($val['inventory_hidden'] == 1) {
                 $data[$key]['stock'] = $this->shop->getHideStock($data[$key]['stock']);
+            }
+
+            $commodityId = (int)$val['id'];
+            if (isset($displaySoldOffsetMap[$commodityId])) {
+                $data[$key]['order_sold'] = (int)$data[$key]['order_sold'] + $displaySoldOffsetMap[$commodityId];
             }
         }
 
@@ -445,12 +457,8 @@ class Index extends User
             throw new JSONException("未查询到相关信息");
         }
 
-        if (!empty($order->password)) {
-            if (!hash_equals((string)$order->password, $password)) {
-                throw new JSONException("密码错误");
-            }
-        } elseif (!hash_equals((string)$order->contact, $contact)) {
-            throw new JSONException("联系方式错误");
+        if (!empty($order->password) && !hash_equals((string)$order->password, $password)) {
+            throw new JSONException("密码错误");
         }
 
         if ($order->status != 1) {
