@@ -27,6 +27,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 15
+    profiles:
+      - bundled-db
 
   web:
     build:
