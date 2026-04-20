@@ -31,7 +31,7 @@ class Plugin extends Manage
         foreach ($plugins as $key => $plugin) {
             $plugins[$key]["id"] = $plugin[\App\Consts\Plugin::PLUGIN_NAME];
             if (!array_key_exists($plugins[$key]["id"], $appStore)) {
-                $plugins[$key]['icon'] = "/favicon.ico";
+                $plugins[$key]['icon'] = "/assets/user/images/charitydoing-icon.svg";
             } else {
                 $plugins[$key]['icon'] = \App\Service\App::APP_URL . $appStore[$plugins[$key]["id"]]['icon'];
             }

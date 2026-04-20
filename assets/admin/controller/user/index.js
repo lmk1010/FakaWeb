@@ -86,7 +86,7 @@
                                         {
                                             title: false, name: "custom", type: "custom", complete: (form, dom) => {
 
-                                                dom.html(marketViewDom.replace("[avatar]", __.avatar ? __.avatar : '/favicon.ico')
+                                                dom.html(marketViewDom.replace("[avatar]", __.avatar ? __.avatar : '/assets/user/images/charitydoing-icon.svg')
                                                     .replace("[shop_name]", __.business.shop_name ? __.business.shop_name : "-")
                                                     .replace("[title]", __.business.title ? __.business.title : "-")
                                                     .replace("[notice]", __.business.notice ? __.business.notice : "-")

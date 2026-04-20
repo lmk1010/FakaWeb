@@ -46,7 +46,7 @@
                                 .replace("[amount]", '<b style="color: green;">¥ ' + map.amount + '</b>')
                                 .replace("[card]", map.card == 0 ? "支付宝" : "微信")
                                 .replace("[create_time]", map.create_time)
-                                .replace("[avatar]", map.user.avatar ? map.user.avatar : '/favicon.ico')
+                                .replace("[avatar]", map.user.avatar ? map.user.avatar : '/assets/user/images/charitydoing-icon.svg')
                                 .replace("[username]", map.user.username)
                                 .replace("[nicename]", map.user.nicename)
                                 .replace("[account]", map.card == 0 ? map.user.alipay : "<div class='wx_qrcode'></div>")

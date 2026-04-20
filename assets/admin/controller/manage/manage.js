@@ -38,7 +38,7 @@
         {
             field: 'avatar', title: '管理员', formatter: function (val, item) {
                 if (!item.avatar) {
-                    item.avatar = "/favicon.ico";
+                    item.avatar = "/assets/user/images/charitydoing-icon.svg";
                 }
                 return '<span class="badge badge-light-dark"><img src="' + item.avatar + '"  style="width: 18px;border-radius: 100%;"/> ' + item.nickname + '</span> '
             }
